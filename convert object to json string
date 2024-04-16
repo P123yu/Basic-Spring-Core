@@ -1,0 +1,7 @@
+// Convert StudentModel object to JSON string
+ObjectMapper objectMapper = new ObjectMapper();
+String json = objectMapper.writeValueAsString(studentModel);
+
+// Use JsonPath to read stuRoll property from JSON string
+Object obj = JsonPath.read(json, "$.stuRoll");
+System.out.println(obj);
