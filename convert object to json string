@@ -5,3 +5,13 @@ String json = objectMapper.writeValueAsString(studentModel);
 // Use JsonPath to read stuRoll property from JSON string
 Object obj = JsonPath.read(json, "$.stuRoll");
 System.out.println(obj);
+
+
+
+<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+<dependency>
+    <groupId>com.jayway.jsonpath</groupId>
+    <artifactId>json-path</artifactId>
+    <version>2.9.0</version>
+</dependency>
+
